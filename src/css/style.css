@@ -564,37 +564,37 @@ body::-webkit-scrollbar-thumb {
   }
 }
 @media screen and (max-width: 767px) {
-  .main-width {
+  #home .main-width {
     padding-top: 10px;
   }
-  .main-width .container .text .title-1 {
+  #home .main-width .container .text .title-1 {
     font-size: 1.5rem;
   }
-  .main-width .container .text .title-2 {
+  #home .main-width .container .text .title-2 {
     font-size: 1.2rem;
   }
-  .main-width .container .text .title-3 {
+  #home .main-width .container .text .title-3 {
     font-size: 1rem;
   }
 }
 @media screen and (max-width: 425px) {
-  .main-width {
+  #home .main-width {
     padding-top: 10px;
   }
-  .main-width .container {
+  #home .main-width .container {
     padding-top: 200px;
   }
-  .main-width .container .text button {
+  #home .main-width .container .text button {
     width: 120px;
     font-size: 1rem;
   }
-  .main-width .container .text button::after {
+  #home .main-width .container .text button::after {
     width: 110px;
   }
-  .main-width .container .text p {
+  #home .main-width .container .text p {
     text-align: center;
   }
-  .main-width .container .text .social a {
+  #home .main-width .container .text .social a {
     width: 40px;
     height: 40px;
     font-size: 1.1rem;
@@ -710,6 +710,7 @@ body::-webkit-scrollbar-thumb {
 #proyects {
   padding: 100px 200px;
   background: url("../img/star1.png"), black;
+  overflow: hidden;
 }
 #proyects .proyects-title {
   position: relative;
@@ -933,6 +934,7 @@ body::-webkit-scrollbar-thumb {
 #contact {
   background: #1b2735;
   position: relative;
+  overflow: hidden;
 }
 
 footer {
@@ -1073,6 +1075,9 @@ footer .contact-info .div-redes .social-footer-list li a:hover {
   }
 }
 @media screen and (max-width: 428px) {
+  footer {
+    padding: 0 5px;
+  }
   footer h2 {
     font-size: 1.5rem;
   }

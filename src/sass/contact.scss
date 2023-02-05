@@ -4,6 +4,7 @@ $input-focus-bg: none;
 #contact{
     background:#1b2735;
     position: relative;
+    overflow: hidden;
 }
 
 footer{
@@ -152,6 +153,7 @@ footer{
 }
 @media screen and (max-width:428px){
     footer{
+        padding: 0 5px;
         h2{
             font-size: 1.5rem;
         }
