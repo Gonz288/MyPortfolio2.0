@@ -5,11 +5,11 @@ $input-focus-bg: none;
     background:#1b2735;
     position: relative;
     overflow: hidden;
+    z-index: 5;
 }
 
 footer{
     color: #fff;
-    z-index: 99;
     .footer-container{
         padding: 50px 250px;
     }
