@@ -72,6 +72,7 @@
         transform: translateX(-50%);
     }
     .content{
+        max-width: 750px;
         width: calc(48% - 2rem);
         text-align: center;
         border-radius: 20px;
