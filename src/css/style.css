@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: Consolas, monaco, monospace;
-  background: url("../img/bola.png"), radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 90%);
+  background: url("../img/bola.webp"), radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 90%);
   background-repeat: no-repeat;
   background-size: 100%;
   overflow-x: hidden;
@@ -28,7 +28,7 @@ body::-webkit-scrollbar-thumb {
 
 #home {
   height: 100vh;
-  background-image: url("../img/star1.png"), url("../img/star2.png");
+  background-image: url("../img/star1.webp"), url("../img/star2.webp");
 }
 #home .main-width {
   width: 1440px;
@@ -311,7 +311,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 #aboutMe {
-  background: url("../img/star1.png"), url("../img/star2.png"), linear-gradient(transparent, black);
+  background: url("../img/star1.webp"), url("../img/star2.webp"), linear-gradient(transparent, black);
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -418,7 +418,7 @@ body::-webkit-scrollbar-thumb {
 }
 #proyects {
   padding: 100px 200px;
-  background: url("../img/star1.png"), black;
+  background: url("../img/star1.webp"), black;
   overflow: hidden;
 }
 #proyects .proyects-title {

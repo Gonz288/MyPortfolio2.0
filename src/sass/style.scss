@@ -9,7 +9,7 @@ html{
 }
 body{
     font-family: Consolas, monaco, monospace;
-    background:  url("../img/bola.png"),radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 90%);
+    background:  url("../img/bola.webp"),radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 90%);
     background-repeat: no-repeat;
     background-size: 100%;
     overflow-x: hidden;
@@ -25,7 +25,7 @@ body::-webkit-scrollbar-thumb{
 
 #home{
     height: 100vh;
-    background-image: url("../img/star1.png"),url("../img/star2.png");
+    background-image: url("../img/star1.webp"),url("../img/star2.webp");
     .main-width{
         width: 1440px;
         max-width: 95%;
