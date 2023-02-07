@@ -15,7 +15,7 @@
 
             $mail = @mail($destination, $issue, $message, $header);
             if($mail){
-                alert("<script>alert('The email has been sent successfully'); </script>");
+                echo "<script>alert('The email has been sent successfully'); </script>";
                 header('Location:index.html');
             }
         }
