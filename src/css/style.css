@@ -30,22 +30,26 @@ body::-webkit-scrollbar-thumb {
   height: 100vh;
   background-image: url("../img/star1.webp"), url("../img/star2.webp");
 }
+
 #home .main-width {
   width: 1440px;
   max-width: 95%;
   margin: 0 auto;
   padding: 60px 0px 0px 0px;
 }
+
 #home .main-width .navbar-brand {
   color: #00fbff;
   font-size: 1.5rem;
   font-weight: bold;
 }
+
 #home .main-width .nav-item {
   list-style: none;
   display: inline-block;
   margin: 0 25px;
 }
+
 #home .main-width .nav-link {
   color: white;
   font-size: 1.5rem;
@@ -54,17 +58,21 @@ body::-webkit-scrollbar-thumb {
   padding: 0 20px;
   text-decoration: none;
 }
+
 #home .main-width .nav-link:hover {
   color: #00FFB1;
 }
+
 #home .main-width .container {
   padding-top: 190px;
 }
+
 #home .main-width .container .text {
   margin-bottom: 40px;
   display: inline-block;
   text-align: center;
 }
+
 #home .main-width .container .text button {
   width: 200px;
   height: 80px;
@@ -81,6 +89,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
 }
+
 #home .main-width .container .text button::after {
   content: "Download CV";
   width: 190px;
@@ -94,33 +103,41 @@ body::-webkit-scrollbar-thumb {
   color: grey;
   box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.5490196078);
 }
+
 #home .main-width .container .text .button2::after {
   content: "Contact";
 }
+
 #home .main-width .container .text button:hover {
   background-color: #00fbff;
   transition: 0.5s;
 }
+
 #home .main-width .container .text button:hover::after {
   color: #fff;
   transition: 0.5s;
 }
+
 #home .main-width .container .text p {
   color: #fff;
   margin: 20px 0 20px;
   text-align: left;
 }
+
 #home .main-width .container .text .title-1 {
   font-size: 2rem;
 }
+
 #home .main-width .container .text .title-2 {
   font-size: 1.3rem;
   font-weight: bold;
 }
+
 #home .main-width .container .text .title-3 {
   color: #00fbff;
   font-size: 1.2rem;
 }
+
 @keyframes typing {
   from {
     width: 0;
@@ -135,6 +152,7 @@ body::-webkit-scrollbar-thumb {
   margin-left: 10px;
   text-align: center;
 }
+
 #home .main-width .container .social a {
   text-decoration: none;
   width: 50px;
@@ -150,6 +168,7 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 20px;
   margin-top: 20px;
 }
+
 #home .main-width .container .social a:hover {
   transform: scale(1.1);
   color: #00fbff;
@@ -161,11 +180,13 @@ body::-webkit-scrollbar-thumb {
   top: 50px;
   position: fixed;
 }
+
 .spacecraft .nave {
   rotate: 180deg;
   width: 125px;
   animation: spacecraft 1s linear infinite;
 }
+
 @keyframes spacecraft {
   0% {
     left: 1700px;
@@ -187,6 +208,7 @@ body::-webkit-scrollbar-thumb {
   width: 20px;
   padding-bottom: 1px;
 }
+
 .spacecraft .fire .back {
   position: absolute;
   bottom: 0;
@@ -198,6 +220,7 @@ body::-webkit-scrollbar-thumb {
   animation: fire 0.5s linear infinite alternate;
   animation-delay: 1s;
 }
+
 .spacecraft .fire .medium {
   position: absolute;
   bottom: 5%;
@@ -210,6 +233,7 @@ body::-webkit-scrollbar-thumb {
   animation: fire 0.5s linear infinite alternate;
   animation-delay: 0.5s;
 }
+
 .spacecraft .fire .front {
   position: absolute;
   bottom: 10%;
@@ -221,6 +245,7 @@ body::-webkit-scrollbar-thumb {
   transform: rotate(45deg);
   animation: fire 0.5s linear infinite alternate;
 }
+
 .spacecraft .light {
   position: absolute;
   bottom: 97%;
@@ -231,6 +256,7 @@ body::-webkit-scrollbar-thumb {
   background: #522e2a;
   animation: light 2s linear infinite alternate;
 }
+
 .spacecraft .light::before {
   content: "";
   position: absolute;
@@ -241,6 +267,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50%;
   background: #643627;
 }
+
 .spacecraft .light::after {
   content: "";
   position: absolute;
@@ -251,6 +278,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50%;
   background: #743d25;
 }
+
 @keyframes light {
   0% {
     opacity: 1;
@@ -271,7 +299,6 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0.9) rotate(45deg);
   }
 }
-
 @media screen and (max-width: 767px) {
   #home .main-width {
     padding-top: 10px;
