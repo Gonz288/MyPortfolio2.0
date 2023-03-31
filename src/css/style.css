@@ -532,7 +532,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;
   box-shadow: 5px 5px 20px rgba(0, 255, 242, 0.618);
   transition: 0.5s;
-  object-fit: cover;
 }
 #proyects .content .card-body {
   border-radius: 0 0 20px 20px;
