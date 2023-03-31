@@ -1,0 +1,126 @@
+//Card AboutMe
+$card-bg: #333;
+$card-color: #fff;
+$card-border-width: 0px;
+$card-spacer-x: 150px;
+$card-spacer-y: 150px;
+$main-color: cyan;
+
+#aboutMe{
+    background: url("../img/star1.webp"),url("../img/star2.webp"),linear-gradient(transparent, black);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 0;
+    .title{
+        color: #fff;
+        text-align: left;
+        font-size: 2rem;
+        font-weight: bold;
+        font-style: italic;
+        span{
+            color: $main-color;
+        }
+    }
+    .card{
+        border: none;
+        text-align: left;
+        padding: 50px;
+        .card-title{
+            display: inline;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: bold;
+            font-style: italic;
+            transition: 500ms;
+        }
+        .card-title:hover{
+            color: $main-color;
+        }
+        .card-title-color{
+            display: inline;
+            color: $main-color;
+            font-size: 1.2rem;
+            font-weight: bold;
+            font-style: italic;
+            transition: 500ms;
+        }
+        .card-title-orange:hover{
+            color: #fff;
+        }
+        .card-text{
+            color: #fff;
+            font-size: 1.10rem;
+        }
+    }
+
+    img{
+        width: 25rem;
+        height: 30rem;
+        border-radius: 5%;
+        transform: perspective(800px) rotateY(-10deg);
+        transition: 0.5s;
+        z-index: 0;
+    }
+    img:hover{
+        transform: perspective(800px) rotateY(0deg);
+    }
+}
+.glassmorfism{
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.187);
+    backdrop-filter:blur(2px);
+}
+
+
+
+@media screen and (max-width: 1024px){ 
+    #aboutMe{
+        .card{
+            padding: 20px 5px;
+            .card-text{
+                font-size: 0.85rem;
+            }
+        }
+        img{
+            width: 20rem;
+            height: 25rem;
+        }
+    }
+}
+@media screen and (max-width: 767px){ 
+    #aboutMe{
+        .card{
+            padding: 20px 25px;
+        }
+        height: auto;
+        padding: 50px 0px 50px 0px;
+    }
+}
+@media screen and (max-width: 558px){ 
+    #aboutMe{
+        .title{
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+        }
+        .card{
+            text-align: center;
+            padding: 20px 0;
+            .card-title{
+                font-size: 1.1rem;
+            }
+            .card-title-color{
+                font-size: 1.1rem;
+            }
+        }
+        img{
+            width: 15rem;
+            height: 18rem;
+        }
+    }
+}
+
+
+

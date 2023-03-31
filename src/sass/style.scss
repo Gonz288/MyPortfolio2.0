@@ -1,0 +1,343 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: Consolas, monaco, monospace;
+  background: url("../img/ball.webp"), radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 90%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #00fbff;
+  border-radius: 10px;
+}
+
+#home {
+  height: 100vh;
+  background-image: url("../img/star1.webp"), url("../img/star2.webp");
+}
+
+#home .main-width {
+  width: 1440px;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 60px 0px 0px 0px;
+}
+
+#home .main-width .navbar-brand {
+  color: #00fbff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#home .main-width .nav-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 25px;
+}
+
+#home .main-width .nav-link {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+#home .main-width .nav-link:hover {
+  color: #00FFB1;
+}
+
+#home .main-width .container {
+  padding-top: 190px;
+}
+
+#home .main-width .container .text {
+  margin-bottom: 40px;
+  display: inline-block;
+  text-align: center;
+}
+
+#home .main-width .container .text button {
+  width: 200px;
+  height: 80px;
+  background: transparent;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 16px 14px 20px rgba(0, 0, 0, 0.5490196078);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home .main-width .container .text button::after {
+  content: "Download CV";
+  width: 190px;
+  height: 70px;
+  background: linear-gradient(#101010, rgba(16, 16, 16, 0.8980392157));
+  position: absolute;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+  box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.5490196078);
+}
+
+#home .main-width .container .text .button2::after {
+  content: "Contact";
+}
+
+#home .main-width .container .text button:hover {
+  background-color: #00fbff;
+  transition: 0.5s;
+}
+
+#home .main-width .container .text button:hover::after {
+  color: #fff;
+  transition: 0.5s;
+}
+
+#home .main-width .container .text p {
+  color: #fff;
+  margin: 20px 0 20px;
+  text-align: left;
+}
+
+#home .main-width .container .text .title-1 {
+  font-size: 2rem;
+}
+
+#home .main-width .container .text .title-2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#home .main-width .container .text .title-3 {
+  color: #00fbff;
+  font-size: 1.2rem;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border: transparent;
+  }
+}
+#home .main-width .container .social {
+  margin-left: 10px;
+  text-align: center;
+}
+
+#home .main-width .container .social a {
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-right: 25px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#home .main-width .container .social a:hover {
+  transform: scale(1.1);
+  color: #00fbff;
+  transition: 0.3s;
+}
+
+.spacecraft {
+  right: 0;
+  top: 50px;
+  position: fixed;
+}
+
+.spacecraft .nave {
+  rotate: 180deg;
+  width: 125px;
+  animation: spacecraft 1s linear infinite;
+}
+
+@keyframes spacecraft {
+  0% {
+    left: 1700px;
+    rotate: 180deg;
+  }
+  50% {
+    left: 1699px;
+    rotate: 179deg;
+  }
+  100% {
+    left: 1700px;
+    rotate: 180deg;
+  }
+}
+.spacecraft .fire {
+  position: absolute;
+  bottom: 100%;
+  left: 42%;
+  width: 20px;
+  padding-bottom: 1px;
+}
+
+.spacecraft .fire .back {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 100%;
+  background: #ff6234;
+  border-radius: 0 75% 75% 75%;
+  transform: rotate(45deg);
+  animation: fire 0.5s linear infinite alternate;
+  animation-delay: 1s;
+}
+
+.spacecraft .fire .medium {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  width: 80%;
+  padding-bottom: 80%;
+  background: #ff7d17;
+  border-radius: 0 75% 75% 75%;
+  transform: rotate(45deg);
+  animation: fire 0.5s linear infinite alternate;
+  animation-delay: 0.5s;
+}
+
+.spacecraft .fire .front {
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  width: 60%;
+  padding-bottom: 60%;
+  background: #ffb726;
+  border-radius: 0 75% 75% 75%;
+  transform: rotate(45deg);
+  animation: fire 0.5s linear infinite alternate;
+}
+
+.spacecraft .light {
+  position: absolute;
+  bottom: 97%;
+  left: 37%;
+  width: 32px;
+  padding-bottom: 33px;
+  border-radius: 50%;
+  background: #522e2a;
+  animation: light 2s linear infinite alternate;
+}
+
+.spacecraft .light::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 29px;
+  padding-bottom: 39px;
+  border-radius: 50%;
+  background: #643627;
+}
+
+.spacecraft .light::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 12.5%;
+  width: 25px;
+  padding-bottom: 35px;
+  border-radius: 50%;
+  background: #743d25;
+}
+
+@keyframes light {
+  0% {
+    opacity: 1;
+    transform: translate(0px) scale(1);
+  }
+  100% {
+    opacity: 0.8;
+    transform: translateY(-5px) scaleX(0.9);
+  }
+}
+@keyframes fire {
+  0% {
+    opacity: 1;
+    transform: scale(1) rotate(45deg);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(0.9) rotate(45deg);
+  }
+}
+@media screen and (max-width: 767px) {
+  #home .main-width {
+    padding-top: 10px;
+  }
+  #home .main-width .container .text .title-1 {
+    font-size: 1.5rem;
+  }
+  #home .main-width .container .text .title-2 {
+    font-size: 1.2rem;
+  }
+  #home .main-width .container .text .title-3 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  #home .main-width {
+    padding-top: 10px;
+  }
+  #home .main-width .container {
+    padding-top: 200px;
+  }
+  #home .main-width .container .text button {
+    width: 120px;
+    font-size: 1rem;
+  }
+  #home .main-width .container .text button::after {
+    width: 110px;
+  }
+  #home .main-width .container .text p {
+    text-align: center;
+  }
+  #home .main-width .container .text .social a {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+    margin-right: 10px;
+  }
+}
+
+@import "aboutMe.scss";
+@import "proyects.scss";
+@import "contact.scss";
