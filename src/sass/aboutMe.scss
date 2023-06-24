@@ -7,7 +7,7 @@ $card-spacer-y: 150px;
 $main-color: cyan;
 
 #aboutMe{
-    background: url("../img/star1.webp"),url("../img/star2.webp"),linear-gradient(transparent, black);
+    background: linear-gradient(transparent, black);
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -121,6 +121,3 @@ $main-color: cyan;
         }
     }
 }
-
-
-

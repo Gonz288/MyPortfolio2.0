@@ -28,7 +28,6 @@ body::-webkit-scrollbar-thumb {
 
 #home {
   height: 100vh;
-  background-image: url("../img/star1.webp"), url("../img/star2.webp");
 }
 
 #home .main-width {
@@ -335,6 +334,11 @@ body::-webkit-scrollbar-thumb {
     height: 40px;
     font-size: 1.1rem;
     margin-right: 10px;
+  }
+}
+@media screen and (max-width: 1024px){
+  .spacecraft{
+    display: none;
   }
 }
 
