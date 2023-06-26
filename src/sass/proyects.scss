@@ -1,7 +1,8 @@
 #proyects{
     background: black;
+
     overflow: hidden;
-    padding: 100px 0;
+    padding: 150px 0;
     .proyects-title{
         position: relative;
         color: #fff;
@@ -14,6 +15,7 @@
     }
     .card{
         background-color: transparent;
+        border: 1px solid #484747;
         .card-body{
             h4{
                 text-align: center;
@@ -35,6 +37,34 @@
                     img{
                         width: 26px;
                         height: 26px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #proyects{
+        .proyects-title{
+            font-size: 1.5rem;
+        }
+        .card{
+            .card-body{
+                h4{
+                    text-align: center;
+                    color: #fff;
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 15px;
+                }
+                .technolgies-img{
+                    .btn-created{          
+                        img{
+                            width: 20px;
+                            height: 20px;
+                        }
                     }
                 }
             }

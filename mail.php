@@ -1,8 +1,7 @@
 <?php 
     if(isset($_POST['submit'])){
-        if(!empty($_POST['name']) && !empty($_POST['lastname']) && !empty($_POST['email']) && !empty($_POST['issue']) && !empty($_POST['message'])){
+        if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['issue']) && !empty($_POST['message'])){
             $name = $_POST['name'];
-            $lastname = $_POST['lastname'];
             $email = $_POST['email'];
             $issue = $_POST['issue'];
             $message = $_POST['message'];

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/563e341526.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" >
@@ -13,20 +15,11 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <div class="spacecraft" data-aos="fade-down">
-        <div class="light"></div>
-        <div class="fire">
-            <div class="back"></div>
-            <div class="medium"></div>
-            <div class="front"></div>
-        </div>
-        <img src="src/img/spacecraft.avif" class="nave">
-    </div>
     <section id="home">
         <div class="main-width">
             <header>
                 <nav class="navbar navbar-expand-xl" data-aos="fade-down">
-                    <a href="#" class="navbar-brand">My Portfolio</a>
+                    <a href="#home" class="navbar-brand">My Portfolio</a>
                 </nav>
             </header>
             <div class="container">
@@ -47,22 +40,93 @@
         </div>
     </section>
 
-    <section id="aboutMe">
+    <section id="aboutme-section">
         <div class="container-xl">
-            <div class="card glassmorfism">
-                <div class="row g-0">
-                    <div class="col-md-7 col-sm-12 align-self-center">
-                        <div class="card-body" data-aos="fade-left">
-                            <h2 class="title"><span>About</span> Me</h2>
-                            <h5 class="card-title">IT Technician |</h5><h5 class="card-title-color">| Full Stack Developer</h5>
-                            <p class="card-text mt-3">I'm Gonzalo and I'm 21 years old. I consider myself a person who is passionate about computers and technology.
-                                My first contact with programming was in the 4th year of high school, learning the logic of programming, with algorithms, pseudocodes, and then with the beloved C++ language, at the same time in another subject, HTML5 and CSS. In the 7th year they gave me the opportunity to develop my school's website as a professional practice (since I didn't have one), at the same time they taught me Bootstrap, PHP and MySql, and to implement these technologies to the site.<br>
-                                I finished the Full Stack Developer career and Cybersegurity course in Coderhouse, I'm currently doing personal projects to improve my skills, and looking for job opportunities. 
-                            </p>
+            <div class="aboutme">
+                <div class="card glassmorfism">
+                    <div class="row g-0">
+                        <div class="col-md-7 col-sm-12">
+                            <div class="card-header">
+                                <h2 class="title"><span>About</span> Me</h2>
+                                <h5 class="card-title">IT Technician |</h5><h5 class="card-title-color">| Full Stack Developer</h5>
+                            </div>
+                            <div class="card-body" data-aos="fade-left">
+                                <p class="card-text mt-3">I'm Gonzalo and I'm 21 years old. I consider myself a person who is passionate about computers and technology.
+                                    Throughout my entire career in technical high school, I learned Programming, Algorithms, Pseudocode, Web Development, Relational Databases, Computer Networks, Computer Security, Design, Hardware, Software, etc.
+                                </p>
+                                <p class="card-text">
+                                    I'm currently doing personal projects to improve my skills and looking for job opportunities.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-12 text-center align-self-center" data-aos="fade-right">
+                            <img src="src/img/profile.avif" class="img-fluid">
                         </div>
                     </div>
-                    <div class="col-md-5 col-sm-12 text-center align-self-center" data-aos="fade-right">
-                        <img src="src/img/profile.avif" class="img-fluid">
+                </div>
+            </div>
+            <div class="skills">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-header border-bottom border-secondary text-center">
+                                <h4 class="card-title text-main">IT Technician <img src="src/img/tecnico.png" alt="tecnico" width="40px"></h4>
+                            </div>
+                            <div class="card-body text-white d-flex align-items-center">
+                                <p class="card-text"> 
+                                    <ul style="list-style-type: square;">
+                                        <li>PC assembly, repair and maintenance.</li>
+                                        <li>Installation and Formatting (Windows 7/8/10, Linux)</li>
+                                        <li>Computer Networks (PAN, LAN, MAN and WAN) </li>
+                                        <li>Relational Databases </li>
+                                    </ul> 
+                                </p>
+                            </div>
+                            <div class="card-footer text-center border-top border-secondary">
+                                <a href="https://www.coderhouse.com/certificados/6461f2c02c5bad0002d8b7ea" target="_blank"> <button type="button" class="btn text-main"><i class="bi bi-file-arrow-up"></i> Certificate</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-header border-bottom border-secondary text-center">
+                                <h4 class="card-title text-main">Programmer <img src="src/img/programador.png" alt="programador" width="40px"></h4>
+                            </div>
+                            <div class="card-body text-white d-flex align-items-center">
+                                <p class="card-text"> 
+                                    <ul style="list-style-type: square;">
+                                        <li>C++</li>
+                                        <li>Javascript</li>
+                                        <li>Python</li>
+                                        <li>Full Stack Web Developer (HTML, CSS, SASS, ReactJs, NodeJs, PHP, Laravel, MySQL, MongoDB...)</li>
+                                    </ul> 
+                                </p>
+                            </div>
+                            <div class="card-footer text-center border-top border-secondary">
+                                <a href="https://www.coderhouse.com/certificados/6491f3b24c0afa0002e1a06e" target="_blank"> <button type="button" class="btn text-main"><i class="bi bi-file-arrow-up"></i> Certificate</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-header text-main border-bottom border-secondary text-center">
+                                <h4 class="card-title">Cibersegurity <img src="src/img/hacker.png" alt="hacker" width="40px"></h4>
+                            </div>
+                            <div class="card-body text-white d-flex align-items-center">
+                                <p class="card-text"> 
+                                    <ul style="list-style-type: square;">
+                                        <li>Introduction to Cybercrime, Cyberthreats and Cybersecurity</li>
+                                        <li>Vulnerabilities and threats </li>
+                                        <li>Cryptography and Encryption</li>
+                                        <li>Detect and analyze malware</li>
+                                        <li>VPN, Firewall, Kali Linux, Virtual Box </li>
+                                    </ul> 
+                                </p>
+                            </div>
+                            <div class="card-footer border-top border-secondary text-center">
+                                <a href="https://www.coderhouse.com/certificados/6461f2c02c5bad0002d8b7ea" target="_blank"> <button type="button" class="btn text-main"><i class="bi bi-file-arrow-up"></i> Certificate</button></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -74,7 +138,7 @@
             <h2 class="proyects-title text-center mb-5" data-aos="fade-down"><span>My </span>Proyects</h2>
             <div class="row g-5 text-white">
                 <div class="col-12" data-aos="fade-right">
-                    <div class="card border">
+                    <div class="card">
                         <div class="row g-0">
                             <div class="col-12 col-lg-6 p-0 my-auto">
                                 <img class="img-fluid rounded-start" src="src/img/proyectsImg/gonzEcommerce.png">
@@ -82,7 +146,7 @@
                             <div class="col-12 col-lg-6 my-auto">
                                 <div class="card-body text-center">
                                     <h4>E-Commerce -ExpressJs</h4>
-                                    <p>Final Proyect of the Backend Course. Create, Edit and Delete a Product Complete. Complete Purchase process of a digital product, Rol System, Login, Search Product.
+                                    <p>Final Proyect of the Backend Course. Create, edit, delete, and purchase digital products, rol system, signin, signup, search products.
                                         Dependencies: Passport, Swagger, Winston, JsonWebToken, Handlebars, Multer, Nodemailer, Bcrypt, Stripe, etc... 
                                     </p>
                                     <div class="technolgies-img text-center">
@@ -95,15 +159,15 @@
                                     </div>
                                 </div>
                                 <div class="card-footer text-center">
-                                    <button class="btn btn-dark"><a href="https://github.com/Gonz288/GonzEcommerce" target="_blank" class="text-decoration-none text-white fw-semibold"><i class="fa-brands fa-github"></i> GitHub</a></button>
-                                    <button class="btn" style="background-color: #00fbff;"><a href="https://gonzecommerce-production.up.railway.app/" class="text-decoration-none text-black fw-semibold"><i class="fa-solid fa-globe"></i> View</a></button>
+                                    <a href="https://github.com/Gonz288/GonzEcommerce" target="_blank"><button class="btn btn-dark fw-semibold"><i class="fa-brands fa-github"></i> GitHub</button></a>
+                                    <a href="https://gonzecommerce-production.up.railway.app/"><button type="button" class="btn btn-info fw-semibold"><i class="fa-solid fa-globe"></i> View</button></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12" data-aos="fade-left">
-                    <div class="card border">
+                    <div class="card">
                         <div class="row g-0">
                             <div class="col-12 col-lg-6 p-0 my-auto">
                                 <img class="img-fluid rounded-start" src="src/img/proyectsImg/reactProyect.avif">
@@ -124,15 +188,15 @@
                                     </div>
                                 </div>
                                 <div class="card-footer text-center">
-                                    <button class="btn btn-dark"><a href="https://github.com/Gonz288/FinalProyectReact-Gonzalez" target="_blank" class="text-decoration-none text-white fw-semibold"><i class="fa-brands fa-github"></i> GitHub</a></button>
-                                    <button class="btn" style="background-color: #00fbff;"><a href="https://e-commercegonz.netlify.app" class="text-decoration-none text-black fw-semibold"><i class="fa-solid fa-globe"></i> View</a></button>
+                                    <a href="https://github.com/Gonz288/FinalProyectReact-Gonzalez" target="_blank"><button class="btn btn-dark fw-semibold"><i class="fa-brands fa-github"></i> GitHub </button></a>
+                                    <a href="https://e-commercegonz.netlify.app"><button class="btn btn-info fw-semibold"><i class="fa-solid fa-globe"></i> View</button></a>
                                 </div>
                             </div>
                         </div>
                     </div>                    
                 </div>
                 <div class="col-12" data-aos="fade-right">
-                    <div class="card border">
+                    <div class="card">
                         <div class="row g-0">
                             <div class="col-12 col-lg-6 p-0 my-auto"><img class="img-fluid rounded-start" src="src/img/proyectsImg/schoolProyect.avif"></div>
                             <div class="col-12 col-lg-6 my-auto">
@@ -152,15 +216,15 @@
                                     </div>
                                 </div>
                                 <div class="card-footer text-center">
-                                    <button class="btn btn-dark"><a href="https://github.com/Gonz288/TechnicalSchoolN2" target="_blank" class="text-decoration-none text-white fw-semibold"><i class="fa-brands fa-github"></i> GitHub</a></button>
-                                    <button class="btn" style="background-color: #00fbff;"><a href="https://escuelatecnican2favaloro.000webhostapp.com/view/PaginaPrincipal.php" class="text-decoration-none text-black fw-semibold"><i class="fa-solid fa-globe"></i> View</a></button>
+                                    <a href="https://github.com/Gonz288/TechnicalSchoolN2" target="_blank"><button class="btn btn-dark fw-semibold"><i class="fa-brands fa-github"></i> GitHub</button></a>
+                                    <a href="https://escuelatecnican2favaloro.000webhostapp.com/view/PaginaPrincipal.php"><button class="btn btn-info fw-semibold"><i class="fa-solid fa-globe"></i> View</button></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12" data-aos="fade-left">
-                    <div class="card border">
+                    <div class="card">
                         <div class="row g-0">
                             <div class="col-12 col-lg-6 p-0 my-auto"><img class="img-fluid rounded-start" src="src/img/proyectsImg/javascriptProyect.avif"></div>
                             <div class="col-12 col-lg-6 my-auto">
@@ -180,8 +244,8 @@
                                     </div>
                                 </div>
                                 <div class="card-footer text-center">
-                                    <button class="btn btn-dark"><a href="https://github.com/Gonz288/FinalProyectJS-Gonzalez" target="_blank" class="text-decoration-none text-white fw-semibold"><i class="fa-brands fa-github"></i> GitHub</a></button>
-                                    <button class="btn" style="background-color: #00fbff;"><a href="https://gonz288.github.io/FinalProyectJS-Gonzalez/" class="text-decoration-none text-black fw-semibold"><i class="fa-solid fa-globe"></i> View</a></button>
+                                    <a href="https://github.com/Gonz288/FinalProyectJS-Gonzalez" target="_blank"><button class="btn btn-dark fw-semibold"><i class="fa-brands fa-github"></i> GitHub</button></a>
+                                    <a href="https://gonz288.github.io/FinalProyectJS-Gonzalez/"><button class="btn btn-info fw-semibold"><i class="fa-solid fa-globe"></i> View</button></a>
                                 </div>
                             </div>
                         </div>
@@ -191,70 +255,52 @@
         </div>
     </section>
 
-    <section id="contact">
-        <footer>
-            <div class="container-fluid footer-container">
-                <h2 data-aos="fade-down">Contact</h2>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="contact-form" data-aos="fade-right">
-                            <h4 class="mb-5">Send Email</h4>
-                            <form action="/mail.php" method="post">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <label for="Name" class="form-label">First Name</label>
-                                        <input type="text" class="form-control" id="name" name="name" required>
-        
-                                        <label for="LastName" class="form-label">Last Name</label>
-                                        <input type="text" class="form-control" id="lastname" name="lastname" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="Email" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="email" name="email" required>
-        
-                                        <label for="issue" class="form-label">Issue</label>
-                                        <input type="text" class="form-control" id="issue" name="issue" required>
-                                    </div>
-                                </div>
-                                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" rows="4" name="message" required></textarea>
-
-                                <button type="submit" class="btn" name="submit">Send</button>
-                            </form>
-                        </div>
+    <footer>
+        <div class="container-lg">
+            <div class="row rounded g-5">
+                <div class="col-md-7 col-xl-8 py-5 rounded-start" style="background: rgba(0, 0, 0, 0.45); backdrop-filter:blur(5px);">
+                    <h3 class="text-center mb-4">Contact Form</h3>
+                    <div class="contact-form" data-aos="fade-right">
+                        <form action="/mail.php" method="post">
+                            <label for="Name" class="form-label">Full Name</label>
+                            <div class="input-group mb-4">
+                                <span class="input-group-text" style="background-color: #00fbff;"><i class="bi bi-person text-black"></i></span>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
+                            </div>
+                            <label for="Email" class="form-label">Email</label>
+                            <div class="input-group mb-4">
+                                <span class="input-group-text" style="background-color: #00fbff;"><i class="bi bi-envelope text-black"></i></span>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                            </div>
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" name="message" placeholder="Message" required></textarea>
+                            <button type="submit" class="btn" name="submit">Submit</button>
+                        </form>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="contact-info" data-aos="fade-left">
-                            <div class="div-redes">
-                                <ul class="social-footer-list">
-                                    <li class="social-footer-item">
-                                        <a href="https://www.instagram.com/gonnz28/?hl=es-la"><i class="fa-brands fa-instagram"></i></a>
-                                    </li>
-                                    <li class="social-footer-item">
-                                        <a href="https://www.linkedin.com/in/gonz288"><i class="fa-brands fa-linkedin"></i></a>
-                                    </li>
-                                    <li class="social-footer-item">
-                                        <a href="https://github.com/Gonz288"><i class="fa-brands fa-github"></i></a>
-                                    </li>
-                                    <li class="social-footer-item">
-                                        <a href="mailto:gonza_gonzalez28@hotmail.com"><i class="fa-solid fa-envelope"></i></a>
-                                    </li>
-                                </ul>
+                </div>
+                <div class="col-md-5 col-xl-4 py-5 rounded-end px-0" style="background: rgba(0, 0, 0, 0.592); backdrop-filter:blur(1px);">
+                    <h3 class="text-center">Contact Information</h3>
+                    <div class="contact-info" data-aos="fade-left">
+                        <div class="div-info">
+                            <ul class="info-footer-list">
+                                <li><div><i class="fas fa-map-marker-alt"></i></div> Buenos Aires, Argentina</li>
+                                <li class="text-break"><div><i class="fa-solid fa-envelope"></i></div> gonza_gonzalez28@hotmail.com</li>
+                                <li><div><i class="fa-brands fa-whatsapp"></i></div> +54 9 1157221824</li>
+                            </ul>
+                        </div>
+                        <div class="div-redes">
+                            <div class="social" data-aos="zoom-in">
+                                <a href="https://www.instagram.com/gonnz28" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://github.com/Gonz288" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/gonz288/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="mailto:gonza_gonzalez28@hotmail.com"><i class="fa-solid fa-envelope"></i></a>
                             </div>
-                            <div class="div-info">
-                                <ul class="info-footer-list">
-                                    <li><span><i class="fas fa-map-marker-alt"></i></span> Buenos Aires, Argentina</li>
-                                    <li><span><i class="fa-solid fa-envelope"></i></span> gonza_gonzalez28@hotmail.com</li>
-                                    <li><span><i class="fa-brands fa-whatsapp"></i></span> +54 9 1157221824</li>
-                                </ul>
-                            </div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22118.092629483315!2d-58.685866903125195!3d-34.50607491320499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca32d4d911da9%3A0x5f5f0d9c01ed4ae!2sVilla%20de%20Mayo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1671779909953!5m2!1ses!2sar" class="map img-fluid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
-    </section>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
